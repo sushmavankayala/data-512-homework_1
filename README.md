@@ -39,7 +39,7 @@ The resulting data should be structured as follows:
 
 1. [rare-disease_monthly_cumulative_201501-202409.json](generated_files%2Frare-disease_monthly_cumulative_201501-202409.json): Has time series data of the monthly total (desktop + mobile) pageview activity,for each article in the above csv. \
 Data Schema: 
-```JSON
+```Text
 {   
     string: [                         #Page title
         {       
@@ -55,7 +55,7 @@ Data Schema:
 ```
 2. [rare-disease_monthly_desktop_201501-202409.json](generated_files%2Frare-disease_monthly_desktop_201501-202409.json): Has time series data of the monthly desktop pageview activity,for each article in the above csv.\
    Data Schema:
-```JSON
+```Text
 {
     string: [                         #Page title
         {       
@@ -71,7 +71,7 @@ Data Schema:
 ```
 3. [rare-disease_monthly_mobile_201501-202409.json](generated_files%2Frare-disease_monthly_mobile_201501-202409.json): Has time series data of the monthly desktop pageview activity,for each article in the above csv.\
    Data Schema:
-```JSON
+```Text
 {
     string: [                           #Page title
         {
