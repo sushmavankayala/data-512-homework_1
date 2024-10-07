@@ -14,9 +14,14 @@ The source data for this project comes from the Wikimedia Foundation using their
 [Wikimedia Foundation Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use) allows free use of content while requiring attribution, preserving open licenses, and respecting copyright and user rights.
 To ensure that this project complies with Wikimedia's Terms of Use, I've provided the required attribution referencing the original source of data.
 
-### Code for Data Aquisition
+### Code for Data Acquisition
 
 Snippets of the code under [Wikipedia_Article_Traffic_Analysis_2015-2024.ipynb](Wikipedia_Article_Traffic_Analysis_2015-2024.ipynb) were taken from a code example developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code is provided under the [Creative Commons CC-BY license](https://creativecommons.org/licenses/by/4.0/)
+
+### List of rare diseases
+
+The list of rare diseases mentioned in the csv file [rare-disease_cleaned.AUG.2024.csv](rare-disease_cleaned.AUG.2024.csv) is a subset of rare diseases maintained by the [National Organization for Rare Diseases (NORD)](https://rarediseases.org). The names were then matched to Wikipedia articles that are either about a rare disease or have a section that mentions a rare disease.
+Care is taken to adhere to their [Terms and Conditions](https://rarediseases.org/terms-conditions/)
 
 ## Documentation
 
@@ -28,6 +33,15 @@ Snippets of the code under [Wikipedia_Article_Traffic_Analysis_2015-2024.ipynb](
 * [pandas](https://pandas.pydata.org/docs/reference/index.html) : For processing the timeseries data fetched from the API calls
 * [matplotlib](https://matplotlib.org/stable/api/index.html): For creating plots to provide an overview of analysis
 
+## How to Run
+
+The code for the entire analysis resides in [Wikipedia_Article_Traffic_Analysis_2015-2024.ipynb](Wikipedia_Article_Traffic_Analysis_2015-2024.ipynb).\
+
+The notebook does not need any additional configurations, so you can use the `Run All Cells` or `Restart Kernel and Run All Cells`  option of the jupyter notebook.
+
+Note:
+- The data acquisition step takes ~40 minutes to loop through all the diseases mentioned in the CSV file and fetch the corresponding pageview data. This is attributed to the sleep time added to ensure that we do not hit throttling limits of Wikimedia's Pageview API
+- Make sure that the modules `requests` and `pandas` are installed before running the notebook. You can use `pip/pip3` for installation.
 ## Generated Files
 
 ### Data files and corresponding schemas
