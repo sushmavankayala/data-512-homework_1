@@ -1,3 +1,5 @@
+### Note: This project is done as a part of class assignment, and demonstrates my ability in data analysis
+
 # Wikipedia Article Traffic Analysis (2015-2024)
 #### DATA-512 | Homework 1 | Professionalism & Reproducibility
 
